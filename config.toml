@@ -1,4 +1,4 @@
-baseURL = "https://erc-bpgc.github.io/erc_handbook/"
+baseURL = "https://erc-bpgc.github.io/handbook/"
 title = "ERC"
 
 enableRobotsTXT = true
