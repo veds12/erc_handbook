@@ -1,58 +1,47 @@
-# Docsy Example
-
-[Docsy](https://github.com/google/docsy) is a Hugo theme for technical documentation sites, providing easy site navigation, structure, and more. This **Docsy Example Project** uses the Docsy theme, as well as providing a skeleton documentation structure for you to use. You can either copy this project and edit it with your own content, or use the theme in your projects like any other [Hugo theme](https://gohugo.io/themes/installing-and-using-themes/).
-
-This Docsy Example Project is hosted at [https://example.docsy.dev/](https://example.docsy.dev/).
+# erc_handbook
 
 You can find detailed theme instructions in the Docsy user guide: https://docsy.dev/docs/
 
-This is not an officially supported Google product. This project is currently maintained.
+**Just, install go and hugo as mentioned in the documentation of docsy.**
 
-## Cloning the Docsy Example Project
 
-The following will give you a project that is set up and ready to use (don't forget to use `--recurse-submodules` or you won't pull down some of the code you need to generate a working site). The `hugo server` command builds and serves the site. If you just want to build the site, run `hugo` instead.
-
+## Cloning the repo:
+Clone the repo using: 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/google/docsy-example.git
-cd docsy-example
-hugo server
+git clone https://github.com/ERC-BPGC/erc_handbook.git
+git submodule update --init --recursive
+git submodule update --remote --merge
 ```
 
-The theme is included as a Git submodule:
-
-```bash
-▶ git submodule
- a053131a4ebf6a59e4e8834a42368e248d98c01d themes/docsy (heads/master)
-```
-
-If you want to do SCSS edits and want to publish these, you need to install `PostCSS` (not needed for `hugo server`):
-
-```bash
-npm install
-```
-
-<!--### Cloning the Example from the Theme Project
-
-
-```bash
-git clone --recurse-submodules --depth 1 https://github.com/docsy.git
-cd tech-doc-hugo-theme/exampleSite
-HUGO_THEMESDIR="../.." hugo server
-```
-
-
-Note that the Hugo Theme Site requires the `exampleSite` to live in a subfolder of the theme itself. To avoid recursive duplication, the example site is added as a Git subtree:
-
-```bash
-git subtree add --prefix exampleSite https://github.com/google/docsy.git  master --squash
-```
-
-To pull in changes, see `pull-deps.sh` script in the theme.-->
-
-## Running the website locally
-
+## Running the website locally:
 Once you've cloned the site repo, from the repo root folder, run:
-
-```
+```bash
 hugo server
 ```
+
+## Build the website 
+
+Since all of use are working with ROS, using npm (Node Package Manager) is not suggested (npm breaks ROS). Instead install yarn which is another node-js package manager.
+
+-------------------------------
+#### Install Yarn (package manager for web applications)
+- Install yarn: https://classic.yarnpkg.com/en/docs/install/#debian-stable
+- Setup Path: https://github.com/yarnpkg/yarn/issues/5156
+--------------------------
+
+```bash
+yarn add postcss
+```
+This will install `postcss` on your laptop. 
+
+
+To build the website use:
+```
+hugo
+```
+This will generate source in the public folder. Put that source in the handbook repo. 
+
+
+
+### TO DO:
+- Add submodule in this repo to the handbook repo.
