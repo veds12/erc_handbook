@@ -23,8 +23,12 @@ hugo server
 
 Since all of use are working with ROS, using npm (Node Package Manager) is not suggested (npm breaks ROS). Instead install yarn which is another node-js package manager.
 
+Update nodejs: https://github.com/nodesource/distributions/blob/master/README.md 
+NodeJs v12 should work fine. 
+
 -------------------------------
 #### Install Yarn (package manager for web applications)
+
 - Install yarn: https://classic.yarnpkg.com/en/docs/install/#debian-stable
 - Setup Path: https://github.com/yarnpkg/yarn/issues/5156
 --------------------------
@@ -41,7 +45,9 @@ hugo
 ```
 This will generate source in the public folder. Put that source in the handbook repo. 
 
+----------------------------------------------
 
-
-### TO DO:
-- Add submodule in this repo to the handbook repo.
+# Deploying the website
+1. To deploy the website, go to the public folder after building the website using `hugo`.
+2. Commit the changes
+3. Push the website

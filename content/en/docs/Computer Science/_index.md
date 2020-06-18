@@ -1,7 +1,7 @@
 ---
-title: "Control and Automation"
-linkTitle: "Control and Automation"
-weight: 3
+title: "Computer Science"
+linkTitle: "Computer Science"
+weight: 1
 description: >
   What does your user need to know to try your project?
 ---
