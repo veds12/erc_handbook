@@ -3,7 +3,7 @@ title: "Computer Science"
 linkTitle: "Computer Science"
 weight: 1
 description: >
-  What does your user need to know to try your project?
+  An introduction to the use of Computer Science in Robotics
 ---
 
 {{% pageinfo %}}
