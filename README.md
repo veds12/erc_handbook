@@ -9,6 +9,7 @@ You can find detailed theme instructions in the Docsy user guide: https://docsy.
 Clone the repo using: 
 ```bash
 git clone https://github.com/ERC-BPGC/erc_handbook.git
+cd erc_handbook
 git submodule update --init --recursive
 git submodule update --remote --merge
 ```
