@@ -2,35 +2,35 @@
 title: "Gazebo"
 linkTitle: "Gazebo"
 weight: 1
-description: >
-  To be included : Definition of key terms, Intro to URDF and SDF, Intro to Gazebo Plugins, Basic Gazebo Tutorials, Intro to Gazebo Sensors and Actuators, Make your own   	robot(basic)
 ---
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+To be included : Definition of key terms, Intro to URDF and SDF, Intro to Gazebo Plugins, Basic Gazebo Tutorials, Intro to Gazebo Sensors and Actuators, Make your own robot(basic)
 {{% /pageinfo %}}
 
-Information in this section helps your user try your project themselves.
 
-* What do your users need to do to start using your project? This could include downloading/installation instructions, including any prerequisites or system requirements.
+Gazebo is the most popular simulator for robotics development. It can simulate robots in a
+3D environment and can be fully integrated into ROS integrated with Gazebo using the
+**gazebo_ros** ROS package. You can interface your robots in the simulation using ROS
+and control them using ROS messages and services.
 
-* Introductory “Hello World” example, if appropriate. More complex tutorials should live in the Tutorials section.
+## 2.1 Installation
 
-Consider using the headings below for your getting started page. You can delete any that are not applicable to your project.
+Gazebo is automatically installed when you install ROS. To make sure you have all the
+ROS packages necessary for running Gazebo simulations are installed
 
-## Prerequisites
+`sudo apt-get install ros-melodic-gazebo-*`
 
-Are there any system requirements for using your project? What languages are supported (if any)? Do users need to already have any software or tools installed?
+## 2.2 Getting Started
 
-## Installation
+You can launch the Gazebo GUI simulator window by just running the command gazebo
+in the terminal. You can follow **[this](http://gazebosim.org/tutorials?tut=model_editor&cat=model_editor_top)** tutorial to get used to the gazebo GUI and make some
+models.
 
-Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?
+## 2.3 Integration with ROS
 
-## Setup
+Gazebo has tight integration with ROS to make simulation as convenient as possible.
+For example you can publish a velocity to the **cmd_ve**l topic and this can cause a robot
+in Gazebo to move.
 
-Is there any initial setup users need to do after installation to try your project?
-
-## Try it out!
-
-Can your users test their installation, for example by running a commmand or deploying a Hello World example?
 
